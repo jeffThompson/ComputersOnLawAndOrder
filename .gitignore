@@ -1,0 +1,12 @@
+*.mkv
+*.idx
+*.sub
+
+/EarlyScreenshots_Netflix
+/EarlyScreenshots_Netflix
+/ExtractTextFromScript/PNG_Output
+/ExtractTextFromScript/TestPNGs
+/FinalScreenshotsToPost
+/PostedEpisodes
+/PressImages
+/Screenshots

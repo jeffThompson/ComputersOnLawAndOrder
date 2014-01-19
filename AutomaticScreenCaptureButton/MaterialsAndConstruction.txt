@@ -1,0 +1,57 @@
+
+AUTOMATIC SCREENCAPTURE: MATERIALS AND CONSTRUCTION
+Jeff Thompson | 2013 | www.jeffreythompson.org
+
+
+MATERIALS
++ Strip of wood (size completely variable, mine is 1/2 x 2 x 24" MDO, which has a smooth paper finish)
++ 3/4"-wide copper tape w/ conductive adhesive (McMaster part #76555A713)
++ 1M resistor* (Mouser part #660-CF1/4CT52R105J)
++ 47k resistor* (Mouser part #660-CF1/4C473J)
++ 2 pieces of wire (stranded is more flexible)
++ Some kind of Arduino**
++ USB cable
++ rubber feet (McMaster part #95495K243, though any will work fine)
+
+* these values aren't critical; use what you have on hand, though you may have to tune the code
+
+** my touch-bar uses an Arduino Pro Mini and an FTDI breakout, which I used because it's what I had on hand; I would suggest an Arduino Fio or Teensy (which are small and include USB built-in) or, if you don't care about size, a standard Arduino board
+
+
+CONSTRUCTION
+1. Cut wood strip
+Cut the wooden strip to your desired size; I chamfered the edges with a router for a smooth, comfortable finish when sitting on my lap.  Sand everything smooth - be sure to wipe or blow off any dust, as it will make attaching the copper tape difficult.
+
+2. Attach copper tape
+Cut the copper tape from the roll with a scissors, enough to cover most of one side of the plywood (leaving room at one end for the Arduino).  Mine required two strips side-by-side, just be sure to have a little overlap: the tape has a conductive adhesive, so as long as the tape touches it will form a continuous conductive surface.  Cover the tape with a piece of paper and burnish with a putty knife (plastic is best; metal may damage the copper) or the back of a large spoon.
+
+3. Attach the Arduino
+Mine is attached to the wood using a zip tie, run through two holes in the plywood.  Yours could also be mounted using bolts (for regular Arduino boards), or a nasty blob of hot glue :)
+
+4. Solder resistors
+Cut two wires long enough to reach from the Arduino's digital pins to the copper tape.  Strip and tin the ends.  Trim the ends of the resistors to about 1/2"; solder a wire to one end of each resistor.  
+
+5. Wire to Arduino
+Attach the wires to digital pins, either by inserting them into the headers or solder them permanently (depending on your Arduino model).  The 47k resistor goes to digital pin 11; the 1M to digital pin 10.
+
+Upload the 'AutomaticScreencaptureButton' sketch to your board - you will need the Capacitive Sensor library, which can be downloaded at: http://playground.arduino.cc//Main/CapacitiveSensor
+
+5. Tape the ends of the resistors to the copper tape
+Cut a small strip of tape and attach the end of the resistors (the end without wires soldered to them) to the copper tape.  The ends should be as close together as possible without touching - mine are about 1/8" apart and seem to work well.  Burnish the tape to get a goot mechanical and electrical connection (you could solder the resistors in place). A blob of hot glue to secure the resistors to the wood might help for long-term uses.
+
+6. Attach rubber feet
+Peel and stick the rubber feet to the bottom of the piece of wood - that's it!
+
+Done!  Upload and test the Arduino code, tweaking the parameters as needed.
+
+
+TO USE
+1. Launch the Automatic Screen Capture app; change the number of frames to be captured as desired
+2. Open your file/DVD in VLC
+3. Play the video and keep VLC as the "focused" application (ie: the one in front)
+4. Hit the bar when you want to take a screenshot - the video should pause, capture N frames, and resume play.
+
+
+CHANGING THE SOURCE CODE
+With some knowledge of the Arduino board and programming, making changes to the source code is quite easy.  The digital pins used can be swapped, as well as the threshold at which ON is read.
+

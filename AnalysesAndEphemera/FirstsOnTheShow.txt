@@ -1,0 +1,77 @@
+1, 9, first computer turned on
+1, 9, first computer being used onscreen
+1, 14, first personal computer
+1, 15, first detective using a computer
+1, 19, first victim with a computer
+1, 22, first crime involving computers
+2, 24, first dot-matrix printer (most likely)
+2, 32, first lawyer using a computer
+2, 34, first laptop
+2, 34, first mention of computer passwords
+2, 35, first judge with a computer
+2, 36, first computerized cash register
+2, 38, first criminal using a computer
+3, 49, first graphics program
+3, 63, first mention of hackers
+3, 63, first mention of BBS
+3, 63, first use of the word 'download'
+3, 63, first computer virus
+4, 71, first doctor using a computer
+5, 89, first computer on the front of a desk
+5, 92, first person with two computers on one desk
+5, 100, first use of Microsoft Word
+5, 102, first full-color screen
+5, 102, first computer video
+5, 102, first 'zoom-and-enhance'
+5, 105, first 3d model
+5, 105, first digital photograph
+6, 113, first mention of email
+6, 113, first mention of cyberspace
+6, 118, first lieutenant using a computer
+6, 125, first desktop printer
+6, 127, first tower
+6, 127, first mouse
+6, 129, first definitive computer with Windows 95
+7, 145, first (confirmed) dot matrix printer
+7, 149, first tablet
+7, 150, first computer in courtroom
+7, 155, first inkjet printer
+7, 157, first computer speakers
+7, 157, first CD drive (maybe)
+8, 175, first instance of cyber-stalking
+9, 188, first flatscreen monitor
+10, 210, first Mac
+10, 219, first mention of internet pornography
+10, 219, first mention of chatrooms
+10, 222, first confirmed screenshot of Netscape
+10, 222, first mention of the term 'dot-com'
+10, 226, first scanner
+10, 226, first mention of 'logging on'
+11, 238, first digitized mugshot
+12, 257, first Blackberry
+12, 257, first computer running Excel
+12, 259, first computer running Word
+12, 259, first computer running Windows 95
+12, 261, first mention of online auctions
+12, 268, first mention of spyware
+12, 270, first mention of webmasters
+12, 270, first mention of computer science
+13, 288, first mention of online gambling
+13, 301, first use of 'Googled' as a verb
+15, 346, first mention of camera phones
+16, 363, first mention of Buddy List
+17, 372, first instance of prosecutors using a computer in the courtroom
+17, 372, first mention of blogs
+17, 373, first mention of 'social networking'
+17, 373, first mention of WiFi
+17, 378, first laptop in a squad car
+17, 384, first Gmail user (though logo has been removed)
+17, 393, first instant message
+18, 394, first .org URL
+18, 400, first judge with a computer on the bench
+18, 402, first time Jack McCoy uses a computer onscreen
+19, 417, first thumb-drive
+19, 423, first mention of Nigerian email scams
+19, 429, first mention of iPhone
+19, 431, first mention of Photoshop (and 'Photoshopped' as a verb)
+20, 456, first child using a computer onscreen

@@ -1,0 +1,75 @@
+REGEX: ,([A-Za-z].*?\.(com|org|net|edu|biz|co\.uk))
+
+
+ALL URLS (in order of appearance)
+thebaronmuchhumpin.com
+HealthRoad2000.com
+OldBookworm.com
+upyourbutt.net
+getdonner.com
+covertcops.com
+hiphopnations.com
+enditallnow.com
+extremetruth.net
+snakeboy.net
+b-frendz.com
+scumwatch.com
+toomail.net
+gbc.bz
+bootyboys.bz
+deathjunky.com
+noexecutions.org
+toomail.net
+manhattanhears.org
+YouLenz.com
+zeroenergyfootprint.com
+searchling.org
+unraptured.com
+paparazziberry.com
+zoltz.com
+forummail.com
+flashposse.net
+citysmear.com
+therealgore.com
+animetothemax.com
+urbanexcitement.com
+me.com
+mootscountdown.com
+
+
+WITH WHOIS URL
+<ul>
+<li><a href="http://whois.net/whois/thebaronmuchhumpin.com" target="_blank">thebaronmuchhumpin.com</a></li>
+<li><a href="http://whois.net/whois/HealthRoad2000.com" target="_blank">HealthRoad2000.com</a></li>
+<li><a href="http://whois.net/whois/OldBookworm.com" target="_blank">OldBookworm.com</a></li>
+<li><a href="http://whois.net/whois/upyourbutt.net" target="_blank">upyourbutt.net</a></li>
+<li><a href="http://whois.net/whois/getdonner.com" target="_blank">getdonner.com</a></li>
+<li><a href="http://whois.net/whois/covertcops.com" target="_blank">covertcops.com</a></li>
+<li><a href="http://whois.net/whois/hiphopnations.com" target="_blank">hiphopnations.com</a></li>
+<li><a href="http://whois.net/whois/enditallnow.com" target="_blank">enditallnow.com</a></li>
+<li><a href="http://whois.net/whois/extremetruth.net" target="_blank">extremetruth.net</a></li>
+<li><a href="http://whois.net/whois/snakeboy.net" target="_blank">snakeboy.net</a></li>
+<li><a href="http://whois.net/whois/b-frendz.com" target="_blank">b-frendz.com</a></li>
+<li><a href="http://whois.net/whois/scumwatch.com" target="_blank">scumwatch.com</a></li>
+<li><a href="http://whois.net/whois/toomail.net" target="_blank">toomail.net</a></li>
+<li><a href="http://whois.net/whois/gbc.bz" target="_blank">gbc.bz</a></li>
+<li><a href="http://whois.net/whois/bootyboys.bz" target="_blank">bootyboys.bz</a></li>
+<li><a href="http://whois.net/whois/deathjunky.com" target="_blank">deathjunky.com</a></li>
+<li><a href="http://whois.net/whois/noexecutions.org" target="_blank">noexecutions.org</a></li>
+<li><a href="http://whois.net/whois/toomail.net" target="_blank">toomail.net</a></li>
+<li><a href="http://whois.net/whois/manhattanhears.org" target="_blank">manhattanhears.org</a></li>
+<li><a href="http://whois.net/whois/YouLenz.com" target="_blank">YouLenz.com</a></li>
+<li><a href="http://whois.net/whois/zeroenergyfootprint.com" target="_blank">zeroenergyfootprint.com</a></li>
+<li><a href="http://whois.net/whois/searchling.org" target="_blank">searchling.org</a></li>
+<li><a href="http://whois.net/whois/unraptured.com" target="_blank">unraptured.com</a></li>
+<li><a href="http://whois.net/whois/paparazziberry.com" target="_blank">paparazziberry.com</a></li>
+<li><a href="http://whois.net/whois/zoltz.com" target="_blank">zoltz.com</a></li>
+<li><a href="http://whois.net/whois/forummail.com" target="_blank">forummail.com</a></li>
+<li><a href="http://whois.net/whois/flashposse.net" target="_blank">flashposse.net</a></li>
+<li><a href="http://whois.net/whois/citysmear.com" target="_blank">citysmear.com</a></li>
+<li><a href="http://whois.net/whois/therealgore.com" target="_blank">therealgore.com</a></li>
+<li><a href="http://whois.net/whois/animetothemax.com" target="_blank">animetothemax.com</a></li>
+<li><a href="http://whois.net/whois/urbanexcitement.com" target="_blank">urbanexcitement.com</a></li>
+<li><a href="http://whois.net/whois/me.com" target="_blank">me.com</a></li>
+<li><a href="http://whois.net/whois/mootscountdown.com" target="_blank">mootscountdown.com</a></li>
+</ul>

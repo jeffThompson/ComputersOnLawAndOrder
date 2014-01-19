@@ -1,0 +1,23 @@
+
+FIND # OF SUBTITLE TRACK
+1. ffmpeg -i [drag file into Terminal]
+2. get track # for subtitle
+
+EXTRACT SUBTITLE FROM STREAM
+3. mkvextract tracks [drag file into Terminal] 2:/Users/JeffThompson/Desktop/subtitles.sup
+	 - 2 is the track # from step 2
+4. creates .idx and .sub files for the stream (this is very fast)
+
+EXPORT IMAGE FILES FROM .sub FILE
+5. open BDSup2Sub (just double-click the .jar file)
+6. File > Load... and select .sub file
+6a. just hit 'ok' on next menu
+7. Repeat step 6 for .idx file
+8. from 'Output Format' menu on the top, change to 'XML/PNG'
+9. File > Save/Export... and pick a location (note: it is worth creating a new folder, as this will likely create a LOT of image files)
+
+RUN BASH SCRIPT TO OCR FROM IMAGES
+10. that's it, really
+
+DONE!
+Output in single txt file

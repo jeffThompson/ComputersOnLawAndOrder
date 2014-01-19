@@ -1,0 +1,61 @@
+
+TO DO:
+
+[ ] Screenshot of SVU crazy-tech
+
+[ ] Finish book text
+
+[ ] Layout book
+
+[ ]	Test print book
+
+[ ]	Final printing, binding
+
+[ ] Slides for talk
+
+[ ] Check auto-posting
+
+- - - - - - - - - - - - -
+
+NOTES and IDEAS:
+
++ Images to gather:
+	- Tropes: computers behind people turned off, cops staring while someone uses computer, site/DB with big header, etc
+	- Evolution of UI from all-text, early graphics, to fancy stuff
+	- "Programs" really macros (from what? check S1 E21)
+
++ Things to write about:
+	- Lenny as the computer doubter, reflecting a large part of the (older, esp) population at that time
+
++ By skipping the intro: 456 episodes x ~80 seconds means I saved 36,480 seconds, or 608 minutes, or ~ 10 hours
++ By watching at 150% speed: 456 episodes * 47 minutes = 21,432 minutes total * 0.25 = 5,358 minutes, 89.3 hours, or ~3.7 days
+
++ Episode (at least in season 1) is about 47 minutes with credits
+
++	Get list of all files tagged:
+	
+	Using tags:
+	Law & Order - selected				For best of 5 screenshots
+	Law & Order - best						For really exceptional screenshots
+	
+	Commands:
+		mdfind -onlyin $sourceLocation 'tag:Red' | tee $outputDirectory
+		mdfind -onlyin /Users/JeffThompson/Documents/Processing/AutomaticScreencapture/Screenshots/ 'tag:Law & Order - selected OR tag:Law & Order - best' | tee /Users/JeffThompson/Desktop/BestLawAndOrderScreenshots.txt
+
+	Partially via http://brettterpstra.com/2013/10/28/mavericks-tags-spotlight-and-terminal
+	... or using Tag (https://github.com/jdberry/tag)
+
+
++	Rec of each season's intro music (definitely changes midway through)
+
+
++	Extract subtitles from video:
+	- http://superuser.com/a/540036
+	- http://guns.buffout.org/blog/extracting-an-embedded-subtitle-from-a-video-file-using-ffmpeg
+	- http://www.aimersoft.com/rip-dvd/subrip-extract-subtitles-from-dvd.html
+
+	Or get the scripts?
+	- http://www.library.ucsb.edu/special-collections/performing-arts/law-order-production-scripts-1990-2010-pa-mss-86
+
+
++	When tracking stats across the show, also compare with the tenure of DAs, ADAs, detectives and their bosses, etc

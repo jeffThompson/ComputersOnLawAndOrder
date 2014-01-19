@@ -6,6 +6,8 @@ Hardware/software and related files for a project commissioned by Rhizome.org (t
 *Why aren't the screenshots here?*  
 Because there are 11,000 of them, and they're copyright NBC/Universal. If you'd like access to the archive for research purposes, [please just email me](http://www.jeffreythompson.org).
 
+\- \- \- \- \- \- \- \- \- 
+
 **Analyses And Ephemera**  
 Notes, quotes, and some miscellaneous analyses of the show.
 
@@ -36,6 +38,6 @@ List of episodes by season, episode number, episode name, and date aired.
 **Tumblr Theme**  
 Custom Tumblr theme for the project
 
-\- \- \-
+\- \- \- \- \- \- \- \- \- 
 
 All code available under [Creative Commons BY-NC-SA license](http://creativecommons.org/licenses/by-nc-sa/3.0/)  |  Feel free to use but [please let me know](http://www.jeffreythompson.org)

@@ -51,7 +51,8 @@ def get_metadata(path):
 		for data in reader:
 			if int(data[0]) == season and int(data[1]) == episode:
 				for i in range(2, len(data)):
-					out.append(data[i].strip())		# clear newlines, add to list
+					s = data[i].strip()
+					out.append(s.capitalize())		# clear newlines, add to list
 	return out
 
 
@@ -85,7 +86,7 @@ print '\n' + 'Title:    "' + episode_title + '"'
 
 
 # CREATE TAGS AND SLUG
-tags = [ 'season ' + str(season), 'episode ' + str(episode), '"' + episode_title + '"' ]
+tags = [ 'Season ' + str(season), 'Episode ' + str(episode), '"' + episode_title + '"' ]
 firsts = get_metadata('../AnalysesAndEphemera/FirstsOnTheShow.txt')
 if len(firsts) > 0:
 	for first in firsts:

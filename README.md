@@ -1,6 +1,8 @@
 Computers On Law & Order
 ======================
 
+![First computer on the show](http://24.media.tumblr.com/40cd79783ae45ca1b2360ba24d308b15/tumblr_mzo9cdoozA1s96asao1_1280.png)
+
 Hardware/software and related files for a project commissioned by Rhizome.org (thanks!) gathering images of computers and computer use on the American television series "Law & Order".  
 
 *Why aren't the screenshots here?*  

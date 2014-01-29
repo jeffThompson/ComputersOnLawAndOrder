@@ -1,9 +1,9 @@
+*.mov
+*.mp4
 *.mkv
 *.idx
 *.sub
-*.mov
 
-/AllScreenshotFiles
 /EarlyScreenshots_Netflix
 /ExtractTextFromScript/PNG_Output
 /ExtractTextFromScript/TestPNGs

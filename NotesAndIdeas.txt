@@ -25,7 +25,7 @@ NOTES and IDEAS:
 	- add black on sides of smaller images using:
 			for f in *.png; do echo $(basename $f); convert $f -background black -gravity center -extent 853x430 $f; done
 	- combine using: 
-			ffmpeg -r 24 -pattern_type glob -i 'AllScreenshots/*.png' -vcodec png EveryScreenshot.mov
+			ffmpeg -r 24 -pattern_type glob -i 'AllScreenshotFiles/*.png' -vcodec png EveryScreenshot.mov
 	- compress out of PNG codec using Quicktime or MPEG Streamclip
 
 + Images to gather:

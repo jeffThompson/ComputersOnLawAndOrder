@@ -37,8 +37,11 @@ Thoughts, citations, and various notes.
 **Season And Episode List**  
 List of episodes by season, episode number, episode name, and date aired.
 
+**Supercut Of All Screenshots**  
+Process files for creating a supercut of ALL 11,000 screenshots - you'll have to be patient to see this one.
+
 **Tumblr Theme**  
-Custom Tumblr theme for the project
+Custom Tumblr theme for the project.
 
 \- \- \- \- \- \- \- \- \- 
 

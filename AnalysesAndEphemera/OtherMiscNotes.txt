@@ -1,45 +1,45 @@
-1, 22, 'Computer Heaven'
-2, 44, victim dead at computer
-3, 63, 'Department of Doom'
-6, 115, 'Byte Head' magazine
-6, 115, 'Internet International Directory'
-8, 161, Lt. Van Buren gets a new computer (laptop)
-9, 203, Gateway 2000
-9, 205, zoom-and-enhance
-10, 209, Palm Pilot
-10, 210, iMac G3
-10, 215, 'Death Match'
-10, 215, 'Cyber Mafia'
-10, 222, Cakewalk ProAudio
-11, 240, CAPP Software Inc
-11, 248, morgue gets a computer
-11, 250, zoom-and-enhance
-12, 261, FotoMatch
-12, 268, 'A Cyberhead's Guide To Eavesdropping'
-13, 278, Peak DV 3.0
-13, 281, zoom-and-enhance
-13, 301, Yahoo!
-13, 301, Google
-14, 308, zoom-and-enhance
-14, 311, zoom-and-enhance
-15, 340, zoom-and-enhance
-16, 353, zoom-and-enhance
-16, 366, Craigslist
-16, 371, mention of computer trespass
-17, 373, REwind99
-17, 373, WMIRL
-17, 373, mention of .xxx domain
-17, 382, DA's office gets a flatscreen monitor
-17, 383, squad-room gets a new computer
-17, 386, ProTools
-17, 388, district attorney gets a new monitor
-18, 396, Jack McCoy gets a flatscreen monitor
-18, 402, Cybernetti Cafe
-18, 409, zoom-and-enhance
-18, 410, VBuren2008 screen-name
-19, 418, site using Wordpress
-19, 421, Sophapedia
-20, 451, switch from old-school 'beep' when key is pressed to loud keypress sound effect
-20, 456, FighterBoy screen-name
-20, 456, TeacherTroubles screen-name
-20, 456, Teacherpower screen-name
+1,22,'Computer Heaven'
+2,44,Victim dead at computer
+3,63,'Department of Doom'
+6,115,'Byte Head' magazine
+6,115,'Internet International Directory'
+8,161,Lt. Van Buren gets a new computer (laptop)
+9,203,Gateway 2000
+9,205,Zoom-and-enhance
+10,209,Palm Pilot
+10,210,iMac G3
+10,215,'Death Match'
+10,215,'Cyber Mafia'
+10,222,Cakewalk ProAudio
+11,240,CAPP Software Inc
+11,248,Morgue gets a computer
+11,250,Zoom-and-enhance
+12,261,FotoMatch
+12,268,'A Cyberhead's Guide To Eavesdropping'
+13,278,Peak DV 3.0
+13,281,Zoom-and-enhance
+13,301,Yahoo!
+13,301,Google
+14,308,Zoom-and-enhance
+14,311,Zoom-and-enhance
+15,340,Zoom-and-enhance
+16,353,Zoom-and-enhance
+16,366,Craigslist
+16,371,Mention of computer trespass
+17,373,REwind99
+17,373,WMIRL
+17,373,Mention of .xxx domain
+17,382,DA's office gets a flatscreen monitor
+17,383,Squad-room gets a new computer
+17,386,ProTools
+17,388,District attorney gets a new monitor
+18,396,Jack McCoy gets a flatscreen monitor
+18,402,Cybernetti Cafe
+18,409,Zoom-and-enhance
+18,410,VBuren2008 screen-name
+19,418,Site using Wordpress
+19,421,Sophapedia
+20,451,Switch from old-school 'beep' when key is pressed to loud keypress sound effect
+20,456,FighterBoy screen-name
+20,456,TeacherTroubles screen-name
+20,456,Teacherpower screen-name

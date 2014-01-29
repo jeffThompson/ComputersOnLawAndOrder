@@ -8,13 +8,13 @@ A script to post Law & Order screenshots to Tumblr.
 CONFIG FILE
 The post settings are stored in a JSON file in the following format:
 	{ 'consumer_key': 'xxxx', 'consumer_secret': 'xxxx', 'oauth_token': 'xxxx', 'oauth_secret': 'xxxx' }
-This file has been left out of this repository, since it contains Tumblr passwords :)
+	
+Twitter settings include 'twitter_' before the listing. This file has been left out of this repository,
+since it contains Tumblr passwords :)
 
 REQUIRES
 + PyTumblr: https://github.com/tumblr/pytumblr
-
-TO DO:
-+ 
++ Twitter: https://github.com/bear/python-twitter
 
 '''
 
@@ -24,6 +24,9 @@ import csv																# for parsing notes, quotes, etc
 import re																	# data parsing
 import shutil															# for moving uploaded folders
 from OAuthSettings import settings				# import from settings.py
+import twitter														# for posting to Twitter
+from sys import exit											# for exiting when done posting
+
 
 blog_address = 'computersonlawandorder.tumblr.com'		# where are we posting?
 custom_tweet = False																	# add custom Tweet text to photo? (not for quotes post)
@@ -51,9 +54,20 @@ def get_metadata(path):
 		for data in reader:
 			if int(data[0]) == season and int(data[1]) == episode:
 				for i in range(2, len(data)):
-					s = data[i].strip()
-					out.append(s.capitalize())		# clear newlines, add to list
+					s = data[i].strip()		# clear newlines
+					out.append(s)					# add to list
 	return out
+
+
+# POST TWEET
+def post_tweet(tweet):
+	print 'Posting to Twitter...'
+	try:
+		api = twitter.Api(consumer_key = consumer_key, consumer_secret = consumer_secret, access_token_key = access_token_key, access_token_secret = access_token_secret)
+		status = api.PostUpdate(tweet)
+		print '- Tweet successful!'
+	except twitter.TwitterError:
+		print '- error posting Tweet!'
 
 
 # TIDY UP AND START
@@ -61,13 +75,17 @@ print ('\n' * 20)
 os.system('cls' if os.name=='nt' else 'clear')
 
 
-# LOAD TUMBLR SETTINGS FROM FILE
+# LOAD TUMBLR && TWITTER SETTINGS FROM FILE
 client = pytumblr.TumblrRestClient(
 	settings['consumer_key'],
 	settings['consumer_secret'],
 	settings['oauth_token'],
 	settings['oauth_secret']
 )
+consumer_key = settings['twitter_consumer_key']
+consumer_secret = settings['twitter_consumer_secret']
+access_token_key = settings['twitter_oauth_token']
+access_token_secret = settings['twitter_oauth_secret']
 
 
 # EXTRACT NEXT SEASON/EPISODE
@@ -77,6 +95,9 @@ season = int(re.findall(r'S(.*?)E', all_dirs[0])[0])
 episode = int(re.findall(r'E(.*)', all_dirs[0])[0])
 print bold_start + 'SEASON ' + str(season) + ', EPISODE ' + str(episode) + bold_end
 
+
+# PRINT SETTINGS
+print '\n' + 'Custom tweet: ' + str(custom_tweet)
 
 # LOAD LIST OF IMAGES, EPISODE TITLE
 images = listdir_nohidden('../FinalScreenshotsToPost/' + current_directory)
@@ -94,7 +115,7 @@ if len(firsts) > 0:
 notes = get_metadata('../AnalysesAndEphemera/OtherMiscNotes.txt')
 if len(notes) > 0:
 	for note in notes:
-		tags.append(notes.strip())
+		tags.append(note.capitalize())
 print 'Tags:    ',
 for i, tag in enumerate(tags):
 	if i < len(tags) - 1:
@@ -111,7 +132,7 @@ if len(quotes) > 0:
 	print 'Quotes:   ' + str(quotes)
 	for quote in quotes:
 		print '\n' + 'Posting quote...'
-		response = client.create_quote(blog_address, quote=quote, tags=tags, slug=slug)
+		response = client.create_quote(blog_address, quote=quote, tags=tags)
 		if 'id' in response:
 			print '- successful!'
 		else:
@@ -122,16 +143,27 @@ if len(quotes) > 0:
 for i, image in enumerate(images):
 	print '\n' + 'Posting image...'
 	image_path = '../FinalScreenshotsToPost/' + current_directory + '/' + image
-	tweet = episode_title + ' (' + str(i+1) + '/' + str(len(images)) + ') - '
+	
+	# post with custom Tweet
 	if custom_tweet:
-		response = client.create_photo(blog_address, data=image_path, tags=tags, slug=slug, tweet=tweet)
+		response = client.create_photo(blog_address, data=image_path, tags=tags, tweet=None)
+		if 'id' in response:
+			print '- posting to Tumblr successful!'
+			url = blog_address + '/' + str(response['id'])
+			tweet = episode_title + ' (' + str(i+1) + '/' + str(len(images)) + ') - ' + url
+			post_tweet(tweet)
+		else:
+			print '- error uploading post to Tumblr, sorry... :('
+			print response
+
+	# post with default Tweet (or no Tweet, if not turned on)
 	else:
-		response = client.create_photo(blog_address, data=image_path, tags=tags, slug=slug)
-	if 'id' in response:
-		print '- successful!'
-	else:
-		print '- error uploading post, sorry... :('
-		print response
+		response = client.create_photo(blog_address, data=image_path, tags=tags)
+		if 'id' in response:
+			print '- posting to Tumblr successful!'
+		else:
+			print '- error uploading post to Tumblr, sorry... :('
+			print response
 
 
 # MOVE POSTED FOLDER

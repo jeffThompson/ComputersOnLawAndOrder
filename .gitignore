@@ -1,12 +1,15 @@
 *.mkv
 *.idx
 *.sub
+*.mov
 
-/EarlyScreenshots_Netflix
+/AllScreenshotFiles
 /EarlyScreenshots_Netflix
 /ExtractTextFromScript/PNG_Output
 /ExtractTextFromScript/TestPNGs
-/FinalScreenshotsToPost
+/FinalScreenshotsToPost*
+/Lecture
 /PostedEpisodes
 /PressImages
+/RhizomePost
 /Screenshots

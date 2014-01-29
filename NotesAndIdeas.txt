@@ -19,6 +19,15 @@ TO DO:
 
 NOTES and IDEAS:
 
++ Mega clip of ALL screenshots:
+	- make list of all files in chronological order using Processing sketch
+	- run 'CopyAllFilesFromList.sh' to put them all in one folder
+	- add black on sides of smaller images using:
+			for f in *.png; do echo $(basename $f); convert $f -background black -gravity center -extent 853x430 $f; done
+	- combine using: 
+			ffmpeg -r 24 -pattern_type glob -i 'AllScreenshots/*.png' -vcodec png EveryScreenshot.mov
+	- compress out of PNG codec using Quicktime or MPEG Streamclip
+
 + Images to gather:
 	- Tropes: computers behind people turned off, cops staring while someone uses computer, site/DB with big header, etc
 	- Evolution of UI from all-text, early graphics, to fancy stuff

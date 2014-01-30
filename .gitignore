@@ -4,7 +4,8 @@
 *.idx
 *.sub
 
-/AutoPostToTumblr/OAuthSettings.*
+OAuthSettings.py
+OAuthSettings.pyc
 
 /EarlyScreenshots_Netflix
 /ExtractTextFromScript/PNG_Output

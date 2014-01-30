@@ -4,6 +4,8 @@
 *.idx
 *.sub
 
+OauthSettings.*
+
 /EarlyScreenshots_Netflix
 /ExtractTextFromScript/PNG_Output
 /ExtractTextFromScript/TestPNGs

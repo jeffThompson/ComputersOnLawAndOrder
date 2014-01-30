@@ -4,8 +4,7 @@
 *.idx
 *.sub
 
-OAuthSettings.py
-OAuthSettings.pyc
+OAuthSettings.*
 
 /EarlyScreenshots_Netflix
 /ExtractTextFromScript/PNG_Output

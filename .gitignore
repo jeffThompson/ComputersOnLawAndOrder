@@ -4,7 +4,7 @@
 *.idx
 *.sub
 
-OAuthSettings.*
+/AutoPostToTumblr/OAuthSettings.*
 
 /EarlyScreenshots_Netflix
 /ExtractTextFromScript/PNG_Output

@@ -29,7 +29,7 @@ from sys import exit											# for exiting when done posting
 
 
 blog_address = 'computersonlawandorder.tumblr.com'		# where are we posting?
-custom_tweet = False																	# add custom Tweet text to photo? (not for quotes post)
+custom_tweet = True																		# create custom Tweet? use only when not enabled in Tumblr
 run_as_cron = False																		# exit when running as Cron job
 
 bold_start = '\033[1m'																# special characters for bold text output in Terminal window...
@@ -134,7 +134,16 @@ if len(quotes) > 0:
 		print '\n' + 'Posting quote...'
 		response = client.create_quote(blog_address, quote=quote, tags=tags)
 		if 'id' in response:
-			print '- successful!'
+			print '- posting to Tumblr successful!'
+			
+			# post with custom Tweet
+			if custom_tweet:
+				url = blog_address + '/' + str(response['id'])
+				if len(quote) > 80:
+					quote = quote[:80] + '...'
+				tweet = '“' + quote + '”' + ' - ' + url
+				post_tweet(tweet)
+					
 		else:
 			print '- error uploading post, sorry... :('
 
@@ -143,27 +152,22 @@ if len(quotes) > 0:
 for i, image in enumerate(images):
 	print '\n' + 'Posting image...'
 	image_path = '../FinalScreenshotsToPost/' + current_directory + '/' + image
-	
-	# post with custom Tweet
-	if custom_tweet:
-		response = client.create_photo(blog_address, data=image_path, tags=tags, tweet=None)
-		if 'id' in response:
-			print '- posting to Tumblr successful!'
+	response = client.create_photo(blog_address, data=image_path, tags=tags)
+
+	# successful post...
+	if 'id' in response:	
+		print '- posting to Tumblr successful!'
+
+		# post with custom Tweet
+		if custom_tweet:
 			url = blog_address + '/' + str(response['id'])
 			tweet = episode_title + ' (' + str(i+1) + '/' + str(len(images)) + ') - ' + url
 			post_tweet(tweet)
-		else:
-			print '- error uploading post to Tumblr, sorry... :('
-			print response
-
-	# post with default Tweet (or no Tweet, if not turned on)
+	
+	# error posting...
 	else:
-		response = client.create_photo(blog_address, data=image_path, tags=tags)
-		if 'id' in response:
-			print '- posting to Tumblr successful!'
-		else:
-			print '- error uploading post to Tumblr, sorry... :('
-			print response
+		print '- error uploading post to Tumblr, sorry... :('
+		print response
 
 
 # MOVE POSTED FOLDER

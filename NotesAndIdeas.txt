@@ -59,6 +59,9 @@ NOTES and IDEAS:
 
 
 +	Extract subtitles from video:
+	- http://en.flossmanuals.net/Avidemux/ExtractingDVDSubtitles
+	- http://www.my-guides.net/en/guides/linux-dvd-video/how-to-extract-dvd-subtitles-to-srt-using-avidemux-in-windowslinuxmac-os
+
 	- http://superuser.com/a/540036
 	- http://guns.buffout.org/blog/extracting-an-embedded-subtitle-from-a-video-file-using-ffmpeg
 	- http://www.aimersoft.com/rip-dvd/subrip-extract-subtitles-from-dvd.html

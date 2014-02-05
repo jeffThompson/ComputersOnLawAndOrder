@@ -11,6 +11,9 @@ def post_tweet(tweet):
 	print 'Posting to Twitter...'
 	try:
 		api = twitter.Api(consumer_key = consumer_key, consumer_secret = consumer_secret, access_token_key = access_token_key, access_token_secret = access_token_secret)
+		
+		#image = '/Users/JeffThompson/Documents/ComputersOnLawAndOrder/AutoPostToTumblr/Test.png'
+		#status = api.PostMedia(status = tweet, media = image)
 		status = api.PostUpdate(tweet)
 		print '- Tweet successful!'
 	except twitter.TwitterError:

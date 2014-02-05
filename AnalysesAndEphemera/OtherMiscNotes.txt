@@ -3,7 +3,7 @@
 3,63,'Department of Doom'
 6,115,'Byte Head' magazine
 6,115,'Internet International Directory'
-8,161,Lt. Van Buren gets a new computer (laptop)
+8,161,Lt. Van Buren gets a new computer (a laptop)
 9,203,Gateway 2000
 9,205,Zoom-and-enhance
 10,209,Palm Pilot
@@ -29,17 +29,17 @@
 17,373,REwind99
 17,373,WMIRL
 17,373,Mention of .xxx domain
-17,382,DA's office gets a flatscreen monitor
+17,382,DAs office gets a flatscreen monitor
 17,383,Squad-room gets a new computer
 17,386,ProTools
 17,388,District attorney gets a new monitor
 18,396,Jack McCoy gets a flatscreen monitor
 18,402,Cybernetti Cafe
 18,409,Zoom-and-enhance
-18,410,VBuren2008 screen-name
+18,410,'VBuren2008' screen-name
 19,418,Site using Wordpress
-19,421,Sophapedia
+19,421,'Sophapedia'
 20,451,Switch from old-school 'beep' when key is pressed to loud keypress sound effect
-20,456,FighterBoy screen-name
-20,456,TeacherTroubles screen-name
-20,456,Teacherpower screen-name
+20,456,'FighterBoy' screen-name
+20,456,'TeacherTroubles' screen-name
+20,456,'Teacherpower' screen-name

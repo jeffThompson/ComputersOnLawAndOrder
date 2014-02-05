@@ -64,7 +64,7 @@ print ('\n' * 20)
 os.system('cls' if os.name=='nt' else 'clear')
 
 
-# LOAD TUMBLR FROM FILE
+# LOAD TUMBLR OAUTH SETTINGS FROM FILE
 client = pytumblr.TumblrRestClient(
 	settings['consumer_key'],
 	settings['consumer_secret'],
@@ -84,13 +84,13 @@ if custom_tweet:
 
 # EXTRACT NEXT SEASON/EPISODE
 all_dirs = listdir_nohidden('../FinalScreenshotsToPost/')		# list screenshots directory
-current_directory = all_dirs[0]
-season = int(re.findall(r'S(.*?)E', all_dirs[0])[0])
-episode = int(re.findall(r'E(.*)', all_dirs[0])[0])
+current_directory = all_dirs[0]															# first directory is next to post
+season = int(re.findall(r'S(.*?)E', all_dirs[0])[0])				# extract season number
+episode = int(re.findall(r'E(.*)', all_dirs[0])[0])					# ditto episode
+
+
+# PRINT DETAILS
 print bold_start + 'SEASON ' + str(season) + ', EPISODE ' + str(episode) + bold_end
-
-
-# PRINT SETTINGS
 print '\n' + 'Custom tweet: ' + str(custom_tweet)
 
 # LOAD LIST OF IMAGES, EPISODE TITLE
@@ -102,21 +102,26 @@ print '\n' + 'Title:    "' + episode_title + '"'
 
 # CREATE TAGS AND SLUG
 tags = [ 'Season ' + str(season), 'Episode ' + str(episode), '"' + episode_title + '"' ]
+
+# load firsts list, add if there is a first for the episode
 firsts = get_metadata('../AnalysesAndEphemera/FirstsOnTheShow.txt')
-if len(firsts) > 0:
-	for first in firsts:
-		tags.append(first.strip())
+if len(firsts) > 0:											# if there are firsts
+	for first in firsts:									# iterate...
+		tags.append(first.capitalize())			# capitalize and add to list
+
+# ditto notes
 notes = get_metadata('../AnalysesAndEphemera/OtherMiscNotes.txt')
 if len(notes) > 0:
 	for note in notes:
 		tags.append(note.capitalize())
+
+# print tags
 print 'Tags:    ',
 for i, tag in enumerate(tags):
 	if i < len(tags) - 1:
 		print tag + ', ',
 	else:
 		print tag
-slug = 's' + str(season) + 'e' + str(episode)
 
 
 # GET QUOTES, POST!
@@ -160,7 +165,7 @@ for i, image in enumerate(images):
 		if custom_tweet:
 			print '- posting to Twitter...'
 			url = blog_address + '/' + str(response['id'])
-			tweet = '"' + episode_title + '" (' + str(i+1) + '/' + str(len(images)) + ') - ' + url
+			tweet = episode_title + ' (' + str(i+1) + '/' + str(len(images)) + ') - ' + url
 			try:
 				status = api.PostMedia(status = tweet, media = image_path)
 				print '- Tweet successful!'

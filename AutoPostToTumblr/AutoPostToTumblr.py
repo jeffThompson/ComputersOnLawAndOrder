@@ -6,11 +6,11 @@ Jeff Thompson | 2013-14 | www.jeffreythompson.org
 A script to post Law & Order screenshots to Tumblr.
 
 CONFIG FILE
-The post settings are stored in a JSON file in the following format:
+The OAuth access settings for posting to Tumblr/Twitter are stored in a JSON file in the following format:
 	{ 'consumer_key': 'xxxx', 'consumer_secret': 'xxxx', 'oauth_token': 'xxxx', 'oauth_secret': 'xxxx' }
 	
 Twitter settings include 'twitter_' before the listing. This file has been left out of this repository,
-since it contains Tumblr passwords :)
+since it contains what are basically passwords! :)
 
 REQUIRES
 + PyTumblr: https://github.com/tumblr/pytumblr
@@ -99,7 +99,6 @@ episode_title = re.findall(r'Episode' + str(episode) + '-(.*?)-', images[0])[0]
 episode_title = re.sub('_', ' ', episode_title)
 print '\n' + 'Title:    "' + episode_title + '"'
 
-
 # CREATE TAGS AND SLUG
 tags = [ 'Season ' + str(season), 'Episode ' + str(episode), '"' + episode_title + '"' ]
 
@@ -114,6 +113,11 @@ notes = get_metadata('../AnalysesAndEphemera/OtherMiscNotes.txt')
 if len(notes) > 0:
 	for note in notes:
 		tags.append(note.capitalize())
+
+# ditto air date
+air_date = get_metadata('../AnalysesAndEphemera/AirDates.csv')
+if len(air_date) > 0:
+	tags.append(air_date[0])
 
 # print tags
 print 'Tags:    ',
